@@ -1,18 +1,20 @@
 
-document.onload = (event) => {
-    let btnSubmit = document.querySelector("#btn-form-submit")
-    btnSubmit.addEventListener("click", function(e) {
-        console.log("Clack!");
-
-    }) 
-    var form = document.querySelector('#form-RSVP')
-    console.log(form)
+window.addEventListener("load", function(){
+    const form = document.querySelector('#form-RSVP')
     form.addEventListener("submit", function(event) {
-        const name = form.elements.Nombre.value;
-        const civil = form.elements.civil.value;
-        const ceremonia = form.elements.ceremonia.value;
+        event.preventDefault();
+        const data = new FormData(form);
+        const action = event.target.action;
+        fetch(action, {
+            method: "POST",
+            body: data,
+        })
+        .then(() => {
+            alert("Success");
+        })
     })
-}
+})
+
 let btnMenu = document.getElementById("#btn-menu");
 
 function selectOption(lugar) {
