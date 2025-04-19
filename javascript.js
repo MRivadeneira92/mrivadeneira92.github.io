@@ -13,9 +13,23 @@ window.addEventListener("load", function(){
             alert("Success");
         })
     })
+
+    let selectButtons = document.querySelectorAll(".opcion-boda");
+    for (let i = 0; i < selectButtons.length; i++) {
+        selectButtons[i].addEventListener("click", function() {
+            if(selectButtons[i].childNodes[1].checked) {
+                selectButtons[i].style.backgroundColor = "cornflowerblue";
+            }
+            else {
+                selectButtons[i].style.backgroundColor = "antiquewhite"
+            }
+        })
+}
 })
 
 let btnMenu = document.getElementById("#btn-menu");
+
+
 
 function selectOption(lugar) {
     document.querySelector(`#${lugar}`).click() 

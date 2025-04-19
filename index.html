@@ -10,7 +10,7 @@
     <body>
         <nav class="fix-top">
             <button id="btn-menu"  class="fix-top" onclick="showMenu()">
-                <img src="/imágenes/open-menu_4083576.png" alt="button" style="width: 100px; height: 100px;">
+                <img src="/imágenes/open-menu_4083576.png" alt="button">
             </button>
             <ul id="nav-menu">
                 <li><a href="#Poema" onclick="showMenu()"></a>Intro</li>
@@ -22,26 +22,29 @@
             </ul>
         </nav>
         <main> 
-            <div id="Poema" class="div-page">
-                <h1>Poema</h1>
+            <div id="Poema" class="background-div">
+                <div class="content-container">
+                    <h1>Intro</h1>
+                </div>
+                
             </div>
-            <div id="Acomp" class="div-page">
+            <div id="Acomp" class="background-div">
                 <h1>Acompañanos</h1>
             </div>
-            <div id="Detalles" class="div-page">
+            <div id="Detalles" class="background-div">
                 <h1>Detalles civil</h1>
             </div>
-            <div class="div-page">
+            <div class="background-div">
                 <h1>Mapa Civil</h1>
                 <div class="map-container">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5853.846886837569!2d-1.6516540383758627!3d42.81110381571052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd509258f69d4109%3A0xf69e8e326867a610!2sCiudadela%20de%20Pamplona!5e0!3m2!1sen!2ses!4v1744654482199!5m2!1sen!2ses"  
                     style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
                 </div>
             </div>
-            <div class="div-page">
+            <div class="background-div">
                 <h1>Detalles ceremonia</h1>
             </div>
-            <div id="Ubicación" class="div-page">
+            <div id="Ubicación" class="background-div">
                 <h1>Mapa Ceremonia</h1>
                 <div class="map-container">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3038.0093356783527!2d-3.693608326059878!3d40.40864397017595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sEl%20Jard%C3%ADn%20de%20Arz%C3%A1bal%2C%20Museo%20Nacional%20Centro%20de%20Arte%20Reina%20Sof%C3%ADa%2C%20Edificio%20Sabatini%2C%20C.%20de%20Sta.%20Isabel%2C%2052%2C%20Centro%2C%2028012%20Madrid!5e0!3m2!1ses!2ses!4v1744112865950!5m2!1ses!2ses" 
@@ -52,10 +55,10 @@
                 </div>
                 
             </div>
-            <div id="Vestimenta" class="div-page">
+            <div id="Vestimenta" class="background-div">
                 <h1>Vestimenta</h1>
             </div>
-            <div id="RSVP" class="div-page">
+            <div id="RSVP" class="background-div">
                 <h1>RSVP</h1>
                 <form action="https://script.google.com/macros/s/AKfycbz2x5m0wpeC-eDl-DLOZpmvWMC1lzeCQFthr8YQSqX_6DDLyWOuEAkgZzZ5xgMvkkrW/exec" 
                 id="form-RSVP" method="POST" >
