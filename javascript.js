@@ -1,5 +1,7 @@
-
 window.addEventListener("load", function(){
+    if (screen.width < 800) {
+        document.querySelector("#nav-menu").style.display = "none";
+    }
     const form = document.querySelector('#form-RSVP')
     form.addEventListener("submit", function(event) {
         event.preventDefault();
@@ -36,7 +38,7 @@ function selectOption(lugar) {
 }
 
 function showMenu() {
-    let navMenu = document.querySelector("#nav-menu");
+    let navMenu = document.querySelector("#nav-menu-mobile");
     
     if (screen.width < 800){
         if (navMenu.style.display == "block") {

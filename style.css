@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -16,10 +20,15 @@ nav {
 ul {
     list-style: none;
     display: flex;
+    flex-direction: column;
 }
 
 ul li {
     padding: 5px;
+}
+
+a {
+    text-decoration: none;
 }
 
 .background-div {
@@ -36,30 +45,6 @@ ul li {
     width: 200px;
     height: 25px;
 
-}
-
-#Poema {
-    background-color: aliceblue;
-}
-
-#Acomp {
-    background-color:darkolivegreen;
-}
-
-#Detalles {
-    background-color: bisque;
-}
-
-#Ubicación {
-    background-color: cadetblue;
-}
-
-#Vestimenta {
-    background-color: darksalmon;
-}
-
-#RSVP {
-    background-color: dodgerblue;
 }
 
 #form-RSVP {
@@ -102,17 +87,47 @@ nav {
 }
 
 #nombre-form {
-    border-radius: 5px;
+    border-radius: 30px;
     padding: 5px;
     margin-bottom: 10px;
     width: 60%;
 }
 
+.light-white {
+    background-color: #FAF3f5;
+}
+
+.light-pink-background {
+    background-color: #F5D8DF;
+}
+
+.pink-background {
+    background-color: #EABAC8;
+}
+
+.red-background {
+    background-color: #C02F3A;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.h-100 {
+    height: 100%;
+}
+
 @media (max-width: 800px) {
 
     .content-container {
-        background-color:darkslategray;
+        border: 1px solid black;
         height: 100%;
+    }
+
+    .inner-container {
+        display: flex; 
+        flex-direction: row;
+        justify-content: space-between
     }
 
     .map-container {
@@ -135,16 +150,15 @@ nav {
 
     }
     .background-div {
-        padding: 10%; 
+        padding: 10% 5%; 
     }
 
-    #nav-menu {
+    #nav-menu-mobile {
         display: none;
         width: 100%;
-        background-color: cornflowerblue;
         height: 100vh;
-        padding: 0 20%;
         z-index: 2;
+        text-align: center;
     }
 
     #nombre-form {

@@ -10,78 +10,208 @@
     <body>
         <nav class="fix-top">
             <button id="btn-menu"  class="fix-top" onclick="showMenu()">
-                <img src="/imágenes/open-menu_4083576.png" alt="button">
+                <img src="imágenes/open-menu_4083576.png" alt="button">
             </button>
-            <ul id="nav-menu">
-                <li><a href="#Poema" onclick="showMenu()"></a>Intro</li>
-                <li><a href="#Acomp" onclick="showMenu()">Acomp</a></li>
-                <li><a href="#Detalles" onclick="showMenu()">Detalles</a></li>
-                <li><a href="#Ubicación" onclick="showMenu()">Ubicación</a></li>
+            <ul id="nav-menu" class="light-white">
+                <li><a href="#Portada" onclick="showMenu()"></a>Portada</li>
+                <li><a href="#detalles_civil" onclick="showMenu()">Boda Civil</a></li>
+                <li><a href="#mapa_civil" onclick="showMenu()">Mapa boda civil</a></li>
+                <li><a href="#detalles_ceremonia" onclick="showMenu()">Ceremonia</a></li>
+                <li><a href="#mapa_ceremonia" onclick="showMenu()">Mapa Ceremonia</a></li>
                 <li><a href="#Vestimenta" onclick="showMenu()">Vestimenta</a></li>
                 <li><a href="#RSVP" onclick="showMenu()">RSVP</a></li>
             </ul>
-        </nav>
-        <main> 
-            <div id="Poema" class="background-div">
+            <nav class="background-div light-white fix-top" display="none" id="nav-menu-mobile">
                 <div class="content-container">
-                    <h1>Intro</h1>
-                </div>
-                
-            </div>
-            <div id="Acomp" class="background-div">
-                <h1>Acompañanos</h1>
-            </div>
-            <div id="Detalles" class="background-div">
-                <h1>Detalles civil</h1>
-            </div>
-            <div class="background-div">
-                <h1>Mapa Civil</h1>
-                <div class="map-container">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5853.846886837569!2d-1.6516540383758627!3d42.81110381571052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd509258f69d4109%3A0xf69e8e326867a610!2sCiudadela%20de%20Pamplona!5e0!3m2!1sen!2ses!4v1744654482199!5m2!1sen!2ses"  
-                    style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
-                </div>
-            </div>
-            <div class="background-div">
-                <h1>Detalles ceremonia</h1>
-            </div>
-            <div id="Ubicación" class="background-div">
-                <h1>Mapa Ceremonia</h1>
-                <div class="map-container">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3038.0093356783527!2d-3.693608326059878!3d40.40864397017595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sEl%20Jard%C3%ADn%20de%20Arz%C3%A1bal%2C%20Museo%20Nacional%20Centro%20de%20Arte%20Reina%20Sof%C3%ADa%2C%20Edificio%20Sabatini%2C%20C.%20de%20Sta.%20Isabel%2C%2052%2C%20Centro%2C%2028012%20Madrid!5e0!3m2!1ses!2ses!4v1744112865950!5m2!1ses!2ses" 
-                    style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
-                </div>
-                <div>
-                    <p>Ubicación: Museo Nacional Centro de Arte Reina Sofía, Edificio Sabatini, C. de Sta. Isabel, 52, Centro, 28012 Madrid</p>
-                </div>
-                
-            </div>
-            <div id="Vestimenta" class="background-div">
-                <h1>Vestimenta</h1>
-            </div>
-            <div id="RSVP" class="background-div">
-                <h1>RSVP</h1>
-                <form action="https://script.google.com/macros/s/AKfycbz2x5m0wpeC-eDl-DLOZpmvWMC1lzeCQFthr8YQSqX_6DDLyWOuEAkgZzZ5xgMvkkrW/exec" 
-                id="form-RSVP" method="POST" >
-                    <div>                       
-                        <textarea name="Nombre" id="nombre-form" placeholder="Nombre"></textarea>
+                    <img src="imágenes/01_marco_superior.png" alt="" class="w-100">
+                    <div class="inner-container">
+                        <img src="imágenes/01_marco_lado.png" alt="" class="h-100" style="width: 10%;margin-top:50px">
+                        <div style="text-align: center;">
+                            <ul >
+                                <img src="/imágenes/06_nav_icon.png" alt="" style="width: 10%;margin-top:50px">
+                                <li><a href="#Portada" onclick="showMenu()"></a>Portada</li>
+                                <li><a href="#detalles_civil" onclick="showMenu()">Boda Civil</a></li>
+                                <li><a href="#mapa_civil" onclick="showMenu()">Mapa boda civil</a></li>
+                                <li><a href="#detalles_ceremonia" onclick="showMenu()">Ceremonia</a></li>
+                                <li><a href="#mapa_ceremonia" onclick="showMenu()">Mapa Ceremonia</a></li>
+                                <li><a href="#Vestimenta" onclick="showMenu()">Vestimenta</a></li>
+                                <li><a href="#RSVP" onclick="showMenu()">RSVP</a></li>
+                            </ul>
+                        </div>
+                        <img src="imágenes/01_marco_lado.png" alt="" class="h-100" style="width: 10%;margin-top:50px;transform: rotateY(3.142rad);">
                     </div>
-                    <div>
-                        <div class="opcion-boda" onclick="selectOption('Civil')">
-                            <input type="checkbox" id="Civil" value="Si" name="Civil">
-                            <label for="civil">Civil</label>
+                    <img src="imágenes/01_marco_superior.png" alt="" class="w-100" style="transform:rotateX(3.142rad)">
+                </div>
+            </nav>
+        </nav>
+        
+        <main> 
+            
+            <div id="Portada" class="background-div light-white">
+                <div class="content-container">
+                    <img src="imágenes/01_marco_superior.png" alt="" class="w-100">
+                    <div class="inner-container">
+                        <img src="imágenes/01_marco_lado.png" class="h-100" style="width: 10%;margin-top:50px">
+                        <div style="width: 80%;">
+                            <p>Acompáñanos en una especial </br>celebración con motivo de: </p>
+                            <h2>Nuestra boda</h2>
+                            <img src="imágenes/gráfica_portada.png" alt="" class="w-100">
                         </div>
-                        <div class="opcion-boda" onclick="selectOption('Ceremonia')">
-                            <input type="checkbox" name="Ceremonia" id="Ceremonia" value="Si">
-                            <label for="ceremonia">Ceremonia</label>
+                        <img src="imágenes/01_marco_lado.png" class="h-100" style="width: 10%;margin-top:50px;transform: rotateY(3.142rad);">
+                    </div>
+                    <img src="imágenes/01_marco_superior.png" alt="" class="w-100" style="transform:rotateX(3.142rad)">
+                </div>
+            </div>
+
+            <div id="detalles_civil" class="background-div light-pink-background">
+                <div class="content-container">
+                    <img src="imágenes/02_marco_superior.png" alt="" class="w-100">
+                    <div class="inner-container">
+                        <img src="imágenes/02_marco_izq.png" alt="" class="h-100" style="width: 10%;margin-top:50px">
+                        <div style="text-align: center;">
+                            <img src="imágenes/02_img_corazon.png" alt="" style="width: 30%;">
+                            <h2 style="margin-bottom:1rem">Matrimonio </br>Civil</h2>
+                            <div style="margin-bottom:1rem">
+                                <h3>Fecha</h3>
+                                <p>Viernes 05 de septiembre de 2025</p>
+                            </div>
+                            <div style="margin-bottom:1rem">
+                                <h3>Hora</h3>
+                                <p>18:30 horas</p>
+                            </div>
+                            <div style="margin-bottom:1rem">
+                                <h3>Lugar</h3>
+                                <p>Ciudadela de Pamplona. </br> Navarra, España</p>
+                            </div>
                         </div>
-                        <div class="opcion-boda" onclick="selectOption('Ninguno')">
-                            <input type="checkbox" name="Ninguno" id="Ninguno" value="Si">
-                            <label for="Ninguno">No podre asistir</label>
+                        <img src="imágenes/02_marco_der.png" alt="" class="h-100" style="width: 10%;margin-top:50px;">
+                    </div>
+                    <img src="imágenes/02-marco_fondo.png" alt="" class="w-100">
+                </div>
+            </div>
+
+            <div id="mapa_civil" class="background-div light-pink-background">
+                <div class="content-container">
+                    <img src="imágenes/02_marco_superior.png" alt="" class="w-100">
+                    <div class="inner-container">
+                        <img src="imágenes/02_marco_izq.png" alt="" class="h-100" style="width: 10%;margin-top:50px">
+                        <div style="text-align: center;" class="map-container">
+                            <h2>Ciudadela de Pamplona</h2>
+                            <h3>Pamplona, España</h3>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5853.846886837569!2d-1.6516540383758627!3d42.81110381571052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd509258f69d4109%3A0xf69e8e326867a610!2sCiudadela%20de%20Pamplona!5e0!3m2!1sen!2ses!4v1744654482199!5m2!1sen!2ses"  
+                            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
+                        </div>
+                        <img src="imágenes/02_marco_der.png" alt="" class="h-100" style="width: 10%;margin-top:50px;">
+                    </div>
+                    <img src="imágenes/02-marco_fondo.png" alt="" class="w-100">
+                </div>
+            </div>
+
+            <div id="detalles_ceremonia" class="background-div light-pink-background">
+                <div class="content-container">
+                    <img src="imágenes/03_marco_superior.png" alt="" class="w-100">
+                    <div class="inner-container">
+                        <div style="text-align: center;">
+                            <img src="imágenes/03_img_florero.png" alt="" style="width: 30%;">
+                            <h2 style="margin-bottom:1rem">Ceremonia</h2>
+                            <div style="margin-bottom:1rem">
+                                <h3>Fecha</h3>
+                                <p>Sábado 13 de septiembre de 2025</p>
+                            </div>
+                            <div style="margin-bottom:1rem">
+                                <h3>Hora</h3>
+                                <p>20:00 horas</p>
+                            </div>
+                            <div style="margin-bottom:1rem">
+                                <h3>Lugar</h3>
+                                <p>Jardín de Arzábal( Museo Reina Sofía) </br> Madrid, España</p>
+                            </div>
                         </div>
                     </div>
-                    <input type="submit" value="submit" id="btn-form-submit">
-                </form>
+                    <img src="imágenes/03_marco_inferior.png" alt="" class="w-100">
+                </div>
             </div>
+
+            <div id="mapa_ceremonia" class="background-div light-pink-background">
+                <div class="content-container">
+                    <img src="imágenes/03_marco_superior.png" alt="" class="w-100">
+                    <div class="inner-container">
+                        <div style="text-align: center;">
+                            <div style="text-align: center;" class="map-container">
+                                <h2>Jardín </br>de Arzábal</h2>
+                                <h3>Madrid, España</h3>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3038.0093356783527!2d-3.693608326059878!3d40.40864397017595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sEl%20Jard%C3%ADn%20de%20Arz%C3%A1bal%2C%20Museo%20Nacional%20Centro%20de%20Arte%20Reina%20Sof%C3%ADa%2C%20Edificio%20Sabatini%2C%20C.%20de%20Sta.%20Isabel%2C%2052%2C%20Centro%2C%2028012%20Madrid!5e0!3m2!1ses!2ses!4v1744112865950!5m2!1ses!2ses" 
+                                style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="imágenes/03_marco_inferior.png" alt="" class="w-100">
+                </div>
+            </div>
+
+            <div id="Vestimenta" class="background-div light-white">
+                <div class="content-container">
+                    <img src="imágenes/01_marco_superior.png" alt="" class="w-100">
+                    <div class="inner-container">
+                        <img src="imágenes/01_marco_lado.png" alt="" class="h-100" style="width: 10%;margin-top:50px">
+                        <div style="text-align: center;">
+                            <img src="imágenes/04_lazo.png" alt="" style="width: 30%;">
+                            <h2 style="margin-bottom:1rem">Detalles</h2>
+                            <div style="margin-bottom:1rem">
+                                <h3>Código de vestimenta</h3>
+                                <p>Semi formal</p>
+                            </div>
+                            <div style="margin-bottom:1rem">
+                                <p>En atención al protocolo, por favor 
+                                </br>
+                                evitar colores blanco, nude 
+                                </br>
+                                y rojo en la vestimenta de los eventos
+                                </p>
+                            </div>
+                        </div>
+                        <img src="imágenes/01_marco_lado.png" alt="" class="h-100" style="width: 10%;margin-top:50px;transform: rotateY(3.142rad);">
+                    </div>
+                    <img src="imágenes/01_marco_superior.png" alt="" class="w-100" style="transform:rotateX(3.142rad)">
+                </div>
+            </div>
+
+            <div id="RSVP" class="background-div light-white">
+                <div class="content-container">
+                    <img src="imágenes/05_marco_superior.png" alt="" class="w-100">
+                    <div class="inner-container">
+                        <img src="imágenes/05_marco_izq.png" alt="" class="h-100 new_colour" style="width: 10%;margin-top:50px">
+                        <div style="text-align: center;">
+                            <img src="imágenes/05_torta.png" alt="" style="width: 30%;">
+                            <form action="https://script.google.com/macros/s/AKfycbz2x5m0wpeC-eDl-DLOZpmvWMC1lzeCQFthr8YQSqX_6DDLyWOuEAkgZzZ5xgMvkkrW/exec" 
+                            id="form-RSVP" method="POST" >
+                                <div>        
+                                    <label for="Nombre">Confirma tu </br>asistencia</label>               
+                                    <textarea name="Nombre" id="nombre-form" placeholder="Nombre"></textarea>
+                                </div>
+                                <div>
+                                    <div class="opcion-boda" onclick="selectOption('Civil')">
+                                        <input type="checkbox" id="Civil" value="Si" name="Civil">
+                                        <label for="civil">Civil</label>
+                                    </div>
+                                    <div class="opcion-boda" onclick="selectOption('Ceremonia')">
+                                        <input type="checkbox" name="Ceremonia" id="Ceremonia" value="Si">
+                                        <label for="ceremonia">Ceremonia</label>
+                                    </div>
+                                    <div class="opcion-boda" onclick="selectOption('Ninguno')">
+                                        <input type="checkbox" name="Ninguno" id="Ninguno" value="Si">
+                                        <label for="Ninguno">No podre asistir</label>
+                                    </div>
+                                </div>
+                                <input type="submit" value="submit" id="btn-form-submit">
+                            </form>
+                        </div>
+                        <img src="imágenes/05_marco_der.png" alt="" class="h-100" style="width: 10%;margin-top:50px;">
+                    </div>
+                    <img src="imágenes/05_marco_fondo.png" alt="" class="w-100">
+                </div>
+            </div>
+
         </main>
     </body>
 </html>
