@@ -2,6 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: #C02F3A;
+}
+
+@font-face {
+    font-family: Antonellie;
+    src: url(Antonellie\ Callygraphy\ Demo.otf);
+}
+
+.antonellie {
+    font-family: Antonellie;
 }
 
 html, body {
@@ -120,14 +130,24 @@ nav {
 @media (max-width: 800px) {
 
     .content-container {
-        border: 1px solid black;
         height: 100%;
+        display: flex;
+        flex-direction: column;
     }
 
     .inner-container {
         display: flex; 
         flex-direction: row;
-        justify-content: space-between
+        justify-content: space-between;
+        height: 100%
+    }
+
+    .data-container {
+        width: 80%; 
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     .map-container {
@@ -150,7 +170,7 @@ nav {
 
     }
     .background-div {
-        padding: 10% 5%; 
+        padding: 16% 5%; 
     }
 
     #nav-menu-mobile {
@@ -168,5 +188,10 @@ nav {
 
     li {
         font-size: 2rem;
+    }
+
+    .frameY {
+        margin: 0 auto;
+        width: 90%;
     }
 }
