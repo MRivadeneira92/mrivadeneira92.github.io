@@ -30,7 +30,6 @@ nav {
 ul {
     list-style: none;
     display: flex;
-    flex-direction: column;
 }
 
 ul li {
@@ -128,6 +127,10 @@ nav {
 }
 
 @media (max-width: 800px) {
+
+    ul {
+        flex-direction: column;
+    }
 
     .content-container {
         height: 100%;
