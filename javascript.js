@@ -12,7 +12,8 @@ window.addEventListener("load", function(){
             body: data,
         })
         .then(() => {
-            alert("Success");
+            document.querySelector("#gracias").style.display = "block";
+            document.querySelector("#gracias").scrollIntoView();
         })
     })
 
