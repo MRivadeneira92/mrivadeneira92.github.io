@@ -20,10 +20,10 @@ window.addEventListener("load", function(){
     for (let i = 0; i < selectButtons.length; i++) {
         selectButtons[i].addEventListener("click", function() {
             if(selectButtons[i].childNodes[1].checked) {
-                selectButtons[i].style.backgroundColor = "cornflowerblue";
+                selectButtons[i].style.backgroundColor = "#EABAC8";
             }
             else {
-                selectButtons[i].style.backgroundColor = "antiquewhite"
+                selectButtons[i].style.backgroundColor = "rgba(234, 186, 200, 0)"
             }
         })
 }
