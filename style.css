@@ -169,6 +169,13 @@ input[type="checkbox"] {
         flex-direction: column;
     }
 
+    .h-center {
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+
     .content-container {
         position: relative;
         display: flex;
