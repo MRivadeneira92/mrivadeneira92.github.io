@@ -78,7 +78,9 @@ textarea::placeholder {
 
 #btn-menu {
     display: none;
-    z-index: 3;
+    padding: 0;
+    border: none;
+    background: none;
 }
 
 #btn-form-submit {
@@ -130,6 +132,7 @@ nav {
     border-radius: 30px;
     margin: 2rem 0;
     width: 60%;
+    padding: 10px 0 0 10px;
 }
 
 .light-white {
@@ -163,7 +166,13 @@ input[type="checkbox"] {
 .opcion-boda:hover {
     background-color: #EABAC8;
 }
+
 @media (max-width: 800px) {
+
+    main {
+        position: relative;
+        z-index: -100;
+    }
 
     ul {
         flex-direction: column;
@@ -267,5 +276,10 @@ input[type="checkbox"] {
 
     .titulos {
         font-size: 2rem;
+    }
+
+    button:focus 
+    {   
+        outline: none; 
     }
 }
