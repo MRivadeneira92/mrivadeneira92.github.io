@@ -167,6 +167,10 @@ input[type="checkbox"] {
     background-color: #EABAC8;
 }
 
+.opcion-boda:active {
+    transition: background-color 0.5s;
+}
+
 @media (max-width: 800px) {
 
     main {
@@ -221,8 +225,8 @@ input[type="checkbox"] {
     }
 
     #btn-menu img {
-        width: 25px;
-        height: 25px;
+        width: 50px;
+        height: 50px;
     }
 
     #btn-form-submit {
