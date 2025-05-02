@@ -5,6 +5,9 @@ window.addEventListener("load", function(){
     
     const form = document.querySelector('#form-RSVP')
     form.addEventListener("submit", function(event) {
+        var btnEnviar = document.querySelector("#btn-form-submit");
+        btnEnviar.classList.add("btn-colour-change");
+        btnEnviar.value = "Enviando";
         event.preventDefault();
         const data = new FormData(form);
         const action = event.target.action;
@@ -15,7 +18,18 @@ window.addEventListener("load", function(){
         .then(() => {
             document.querySelector("#gracias").style.display = "block";
             document.querySelector("#gracias").scrollIntoView();
+            btnEnviar.classList.remove("btn-colour-change");
+            btnEnviar.value = "Enviado";
+            btnEnviar.style.backgroundColor = "#d0c9cb";
+            btnEnviar.style.color = "#625E5F";
+            btnEnviar.disabled = true;
+            setTimeout(() => {
+                console.log("book")
+
+                document.querySelector("#img-respuesta").classList.add = "fade-out";
+            },2000)
         })
+
     })
 
     let selectButtons = document.querySelectorAll(".opcion-boda");

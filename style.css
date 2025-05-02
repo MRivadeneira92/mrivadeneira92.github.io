@@ -64,6 +64,8 @@ textarea {
     border: none;
     outline: none;
     color: #C02F3A;
+    text-align: center;
+    resize: none;
 }
 
 textarea::placeholder {
@@ -132,7 +134,8 @@ nav {
     border-radius: 30px;
     margin: 2rem 0;
     width: 60%;
-    padding: 10px 0 0 10px;
+    height: 31px;
+    padding: 5px;
 }
 
 .light-white {
@@ -163,14 +166,41 @@ input[type="checkbox"] {
     width: 0px;
     accent-color: #C02F3A;
 }
+
 .opcion-boda:hover {
     background-color: #EABAC8;
 }
 
-.opcion-boda:active {
-    transition: background-color 0.5s;
+.btn-colour-change{
+    animation: enviando 0.8s infinite alternate;
 }
 
+@keyframes enviando {
+    from {
+        background-color: rgb(234, 186, 200);
+    }
+    to {
+        background-color: #F5D8DF;
+    }
+}
+
+.centering {
+    margin: 0 auto;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+#img-respuesta {
+    opacity: 1;
+    transition: opacity 2s;
+}
+
+.fade-out {
+    opacity: 0;
+}
 @media (max-width: 800px) {
 
     main {
@@ -273,7 +303,7 @@ input[type="checkbox"] {
 
     #portada-imagen {
         width: 60%;
-        margin: 12% auto;
+        margin: 12% auto 4% auto;
     }
 
     /* Detalles Civil */
