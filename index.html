@@ -12,7 +12,7 @@
             <button id="btn-menu"  class="fix-top" onclick="showMenu()">
                 <img src="imágenes/menu.png" alt="button">
             </button>
-            <ul id="nav-menu" class="light-white antonellie" style="display: none;">
+            <ul id="nav-menu" class="light-white antonellie">
                 <li><a href="#Portada" onclick="showMenu()"></a>Portada</li>
                 <li><a href="#detalles_civil" onclick="showMenu()">Matrimonio Civil</a></li>
                 <li><a href="#mapa_civil" onclick="showMenu()">Mapa matrimonio civil</a></li>
@@ -35,7 +35,7 @@
                                 <li><a href="#detalles_ceremonia" onclick="showMenu()">Ceremonia</a></li>
                                 <li><a href="#mapa_ceremonia" onclick="showMenu()">Mapa Ceremonia</a></li>
                                 <li><a href="#Vestimenta" onclick="showMenu()">Detalles</a></li>
-                                <li><a href="#RSVP" onclick="showMenu()">RSVP</a></li>
+                                <li><a href="#RSVP" onclick="showMenu()">Rsvp</a></li>
                             </ul>
                         </div>
                         <img src="imágenes/01_marco_lado.png" alt="" style="width: 10%;margin:50px 0;transform: rotateY(3.142rad);">
@@ -46,7 +46,7 @@
         </nav>
         
         <main> 
-            <div id="Portada" class="light-pink-background" style="height: 100vh;">
+            <div id="Portada" class="light-pink-background" style="height: 100vh; display: none;">
                 <img src="imágenes/07_portada.png" alt="" style="width: 100%; height: 100%;" >
             </div>
 
@@ -57,7 +57,7 @@
                         <img src="imágenes/01_marco_lado.png" class="portada-marcos-laterales">
                         <div class="data-container">
                             <img src="imágenes/01_nombres.png" alt="" id="portada-imagen">
-                            <p class="bois-script" style="font-size: 1.2rem;margin-bottom: 9%">Acompáñanos en una especial </br>celebración con motivo de: </p>
+                            <p  id="portada-texto" class="bois-script">Acompáñanos en una especial </br>celebración con motivo de: </p>
                             <img src="imágenes/01_nuestra_boda.png" alt="" style="width: 72%;margin: 0 auto">
                             <img src="imágenes/gráfica_portada.png" alt="" style="width: 95%; margin: 10% auto 0 auto">
                         </div>
@@ -111,7 +111,7 @@
                 </div>
             </div>
 
-            <div id="detalles_ceremonia" class="background-div light-pink-background" style="padding: 40% 5%;">
+            <div id="detalles_ceremonia" class="background-div light-pink-background">
                 <div class="content-container" style="position: relative;">
                     <img src="imágenes/03_marco_superior.png" alt="" class="w-100">
                     <div class="inner-container h-center" style="position: absolute;height: 70%;flex-direction: column; text-align: center;">

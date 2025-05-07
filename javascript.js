@@ -1,6 +1,7 @@
 window.addEventListener("load", function(){
     if (screen.width < 800) {
         document.querySelector("#nav-menu").style.display = "none";
+        this.document.querySelector("#Portada").style.display = "block";
     } 
     
     const form = document.querySelector('#form-RSVP')
