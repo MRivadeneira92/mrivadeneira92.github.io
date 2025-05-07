@@ -23,6 +23,7 @@
 p {
     font-size: 1.1rem;
 }
+
 .antonellie {
     font-family: Antonellie;
 }
@@ -217,6 +218,12 @@ nav {
 
 .h-100 {
     height: 100%;
+}
+
+/* CEREMONIA */
+
+#detalles_ceremonia .inner-container {
+    max-height: 368px;
 }
 
 /* RSVP */
