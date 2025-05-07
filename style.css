@@ -20,6 +20,9 @@
     src: url(BoisdeJasminScript-Regular.otf);
 }
 
+p {
+    font-size: 1.1rem;
+}
 .antonellie {
     font-family: Antonellie;
 }
@@ -344,7 +347,7 @@ input[type="checkbox"] {
     /* Portada */
     .portada-marcos-laterales {
         width: 13%;
-        margin: 20% 0;
+        margin: 15% 0;
         height: 400px;
     }
 
