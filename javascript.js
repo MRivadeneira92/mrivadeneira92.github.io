@@ -26,8 +26,7 @@ window.addEventListener("load", function(){
             btnEnviar.disabled = true;
             setTimeout(() => {
                 console.log("book")
-
-                document.querySelector("#img-respuesta").classList.add = "fade-out";
+                document.querySelector("#img-respuesta").classList.add = "hidden";
             },2000)
         })
 

@@ -223,7 +223,7 @@ nav {
 /* CEREMONIA */
 
 #detalles_ceremonia .inner-container {
-    max-height: 424px;
+    max-height: 342px;
 }
 
 /* RSVP */
@@ -243,6 +243,18 @@ input[type="checkbox"] {
 
 .btn-colour-change{
     animation: enviando 0.8s infinite alternate;
+}
+
+.visible {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 2s linear;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 2s, opacity 2s linear;
 }
 
 @keyframes enviando {
