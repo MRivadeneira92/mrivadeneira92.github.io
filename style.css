@@ -271,15 +271,6 @@ input[type="checkbox"] {
     flex-direction: column;
 }
 
-#img-respuesta {
-    opacity: 1;
-    transition: opacity 2s;
-}
-
-.fade-out {
-    opacity: 0;
-}
-
 .h-center {
     top: 50%;
     -webkit-transform: translateY(-50%);

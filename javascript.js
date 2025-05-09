@@ -25,11 +25,16 @@ window.addEventListener("load", function(){
             btnEnviar.style.color = "#625E5F";
             btnEnviar.disabled = true;
             setTimeout(() => {
-                console.log("book")
-                document.querySelector("#img-respuesta").classList.add = "hidden";
+                console.log("book");
+                document.querySelector("#img-respuesta").classList.remove("visible");
+                document.querySelector("#img-respuesta").classList.add("hidden");
             },2000)
+            setTimeout(() => {
+                document.querySelector("#img-respuesta").style.display = "none";
+                document.querySelector("#img-poema").classList.remove("hidden");
+                document.querySelector("#img-poema").classList.add("visible");
+            },4000)
         })
-
     })
 
     let selectButtons = document.querySelectorAll(".opcion-boda");
