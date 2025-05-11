@@ -28,12 +28,12 @@ window.addEventListener("load", function(){
                 console.log("book");
                 document.querySelector("#img-respuesta").classList.remove("visible");
                 document.querySelector("#img-respuesta").classList.add("hidden");
-            },2000)
+            },1000)
             setTimeout(() => {
                 document.querySelector("#img-respuesta").style.display = "none";
                 document.querySelector("#img-poema").classList.remove("hidden");
                 document.querySelector("#img-poema").classList.add("visible");
-            },4000)
+            },3000)
         })
     })
 
