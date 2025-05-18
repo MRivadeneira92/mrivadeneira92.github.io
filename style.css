@@ -137,7 +137,7 @@ textarea::placeholder {
 #form-RSVP {
     display: flex;
     flex-direction: column;
-    padding: 0 15%;
+    padding: 0 12vw;
 }
 
 .menu-mobile {
