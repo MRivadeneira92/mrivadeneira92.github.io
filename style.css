@@ -1,0 +1,394 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #C02F3A;
+}
+
+@font-face {
+    font-family: Antonellie;
+    src: url(Antonellie\ Callygraphy\ Demo.otf);
+}
+
+@font-face {
+    font-family: BoisSans;
+    src: url(BoisdeJasminSans-Regular.otf);
+}
+
+@font-face {
+    font-family: BoisScript;
+    src: url(BoisdeJasminScript-Regular.otf);
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+.antonellie {
+    font-family: Antonellie;
+}
+
+.bois-sans {
+    font-family: BoisSans;
+}
+
+.bois-script {
+    font-family: BoisScript;
+    font-weight: inherit;
+
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    overflow: initial;
+    overflow-x: clip
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+ul li {
+    padding: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+textarea {
+    border: none;
+    outline: none;
+    color: #C02F3A;
+    text-align: center;
+    resize: none;
+}
+
+textarea::placeholder {
+    text-align: center;
+
+}
+
+.background-div {
+    width: 100%;
+    height: 100vh;
+    padding: 5% 35%;
+}
+
+.frameY {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.portada-marcos-laterales {
+    width: 13%;
+    margin: 20% 0;
+    height: 400px;
+}
+
+.data-container {
+    width: 80%; 
+    text-align: center;
+}
+
+#portada-imagen {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.inner-container {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.content-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#btn-menu {
+    display: none;
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+#btn-form-submit {
+    width: 200px;
+    height: 25px;
+
+}
+
+#form-RSVP {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15%;
+}
+
+.menu-mobile {
+    padding: 30px 0;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* PORTADA */
+
+#portada-imagen {
+    width: 48%;
+    margin: 12% auto 4% auto;
+}
+
+#portada-texto {
+    font-size: 2rem;
+    margin-bottom: 9%;
+}
+
+.mapa {
+    width: 100%;
+    height: 100%;
+    padding: 0 15%;
+    margin-top: 1rem;
+}
+
+.map-container {
+    height: 66%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.opcion-boda {
+    margin-bottom: 5px;
+    padding: 9.2px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.opcion-boda input {
+    margin-right: 10px;
+}
+
+.fix-top {
+    position: fixed;
+    top: 0;
+}
+
+nav {
+    width: 100%;
+}
+
+#nombre-form {
+    border-radius: 10px;
+    margin: 1rem 0 0;
+    height: 31px;
+    padding: 5px;
+}
+
+.light-white {
+    background-color: #FAF3f5;
+}
+
+.light-pink-background {
+    background-color: #F5D8DF;
+}
+
+.pink-background {
+    background-color: #EABAC8;
+}
+
+.red-background {
+    background-color: #C02F3A;
+}
+
+.details-data-container {
+    margin: 1.5rem auto 0;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+/* CEREMONIA */
+
+/* RSVP */
+
+.opcion-boda label {
+    font-size: 1.3rem;
+}
+
+input[type="checkbox"] {
+    width: 0px;
+    accent-color: #C02F3A;
+}
+
+.opcion-boda:hover {
+    background-color: #EABAC8;
+}
+
+.btn-colour-change{
+    animation: enviando 0.8s infinite alternate;
+}
+
+.visible {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 2s linear;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 2s, opacity 2s linear;
+}
+
+@keyframes enviando {
+    from {
+        background-color: rgb(234, 186, 200);
+    }
+    to {
+        background-color: #F5D8DF;
+    }
+}
+
+.centering {
+    margin: 0 auto;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.h-center {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+@media (max-width: 800px) {
+
+    main {
+        position: relative;
+        z-index: -100;
+    }
+
+    ul {
+        flex-direction: column;
+    }
+
+    .content-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+
+    .map-container {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    #btn-menu {
+        display: block;
+        right: 0;
+    }
+
+    #btn-menu img {
+        width: 50px;
+        height: 50px;
+    }
+
+    #btn-form-submit {
+        width: 80%;
+        height: 28px;
+        background-color: #eabac8;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        margin: 9px auto 0;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+
+    .background-div {
+        padding: 16% 5%; 
+    }
+
+    #nav-menu-mobile {
+        display: none;
+        width: 100%;
+        height: 100vh;
+        z-index: 2;
+        text-align: center;
+    }
+
+    #nombre-form {
+        width: 100%;
+    }
+
+    li {
+        font-size: 26px;
+    }
+
+    .frameY {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    /* Portada */
+    .portada-marcos-laterales {
+        width: 13%;
+        margin: 15% 0;
+        height: 400px;
+    }
+
+    #portada-imagen {
+        width: 60%;
+        margin: 12% auto 4% auto;
+    }
+    
+    #portada-texto {
+        font-size: 1.2rem;
+    }
+
+    /* Detalles Civil */
+
+    .titulos {
+        font-size: 2rem;
+    }
+
+    button:focus 
+    {   
+        outline: none; 
+    }
+
+    /* Detalles Ceremonia */
+
+    #detalles_ceremonia {
+        padding: 40% 5%;    
+    }
+}

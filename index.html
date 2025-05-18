@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Invitación</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width"/>
+        <link rel="stylesheet" href="style.css">
+        <script src="javascript.js"></script>
+    </head>
+    <body>
+        <nav class="fix-top">
+            <button id="btn-menu"  class="fix-top" onclick="showMenu()">
+                <img src="imágenes/menu.png" alt="button">
+            </button>
+            <ul id="nav-menu" class="light-white antonellie" style="display: none;">
+                <li><a href="#Portada" onclick="showMenu()"></a>Portada</li>
+                <li><a href="#detalles_civil" onclick="showMenu()">Matrimonio Civil</a></li>
+                <li><a href="#mapa_civil" onclick="showMenu()">Mapa matrimonio civil</a></li>
+                <li><a href="#detalles_ceremonia" onclick="showMenu()">Ceremonia</a></li>
+                <li><a href="#mapa_ceremonia" onclick="showMenu()">Mapa Ceremonia</a></li>
+                <li><a href="#Vestimenta" onclick="showMenu()">Detalles</a></li>
+                <li><a href="#RSVP" onclick="showMenu()">RSVP</a></li>
+            </ul>
+            <nav class="background-div light-white fix-top bois-script" id="nav-menu-mobile" style="display: none;">
+                <div class="content-container">
+                    <img src="imágenes/01_marco_superior.png" alt="" class="w-100">
+                    <div class="inner-container">
+                        <img src="imágenes/01_marco_lado.png" alt="" style="width: 10%;margin:50px 0">
+                        <div style="text-align: center;">
+                            <ul style="padding-top:30px" class="menu-mobile">
+                                <li><a href="#introduccion" onclick="showMenu()">Introducción</a></li>
+                                <li><a href="#detalles_civil" onclick="showMenu()">Matrimonio Civil</a></li>
+                                <li><a href="#mapa_civil" onclick="showMenu()">Mapa matrimonio civil</a></li>
+                                <li><a href="#detalles_ceremonia" onclick="showMenu()">Ceremonia</a></li>
+                                <li><a href="#mapa_ceremonia" onclick="showMenu()">Mapa Ceremonia</a></li>
+                                <li><a href="#Vestimenta" onclick="showMenu()">Detalles</a></li>
+                                <li><a href="#RSVP" onclick="showMenu()">Rsvp</a></li>
+                            </ul>
+                        </div>
+                        <img src="imágenes/01_marco_lado.png" alt="" style="width: 10%;margin:50px 0;transform: rotateY(3.142rad);">
+                    </div>
+                    <img src="imágenes/01_marco_superior.png" alt="" class="w-100" style="transform:rotateX(3.142rad)">
+                </div>
+            </nav>
+        </nav>
+        
+        <main> 
+            <div id="Portada" class="light-pink-background" style="height: 100vh;">
+                <img src="imágenes/07_portada.png" alt="" style="width: 100%; height: 100%;" >
+            </div>
+
+            <div id="introduccion" class="background-div light-white">
+                <div class="content-container">
+                    <img src="imágenes/01_marco_superior.png" alt="" class="frameY">
+                    <div class="inner-container">
+                        <img src="imágenes/01_marco_lado.png" class="portada-marcos-laterales">
+                        <div class="data-container">
+                            <img src="imágenes/01_nombres.png" alt="" id="portada-imagen">
+                            <p  id="portada-texto" class="bois-script">Acompáñanos en una especial </br>celebración con motivo de: </p>
+                            <img src="imágenes/01_nuestra_boda.png" alt="" style="width: 72%;margin: 0 auto">
+                            <img src="imágenes/gráfica_portada.png" alt="" style="width: 95%; margin: 10% auto 0 auto">
+                        </div>
+                        <img src="imágenes/01_marco_lado.png" class="portada-marcos-laterales" style="transform: rotateY(3.142rad);">
+                    </div>
+                    <img src="imágenes/01_marco_superior.png" alt="" class="frameY" style="transform:rotateX(3.142rad)">
+                </div>
+            </div>
+
+            <div id="detalles_civil" class="background-div light-pink-background">
+                <div class="content-container" style="position: relative;">
+                    <img src="imágenes/02_marco_superior.png" alt="" class="w-100">
+                    <div class="inner-container" style="height: auto;">
+                        <img src="imágenes/02_marco_izq.png" alt="" style="width: 10%;height: 215px; margin:25px 0">
+                        <div class="h-center"  style="position: absolute; display: flex;flex-direction: column;">
+                            <img src="imágenes/02_img_corazon.png" alt="" style="width: 25%;margin:0 auto 5%">
+                            <img src="imágenes/02_matrimonio_civil.png" alt="" style="width: 50%;" class="centering">
+                            <div class="details-data-container">
+                                <h3 class="bois-script titulos">Fecha</h3>
+                                <p class="bois-sans">Viernes 05 de septiembre de 2025</p>
+                            </div>
+                            <div class="details-data-container">
+                                <h3 class="bois-script titulos">Hora</h3>
+                                <p class="bois-sans">18:30 horas</p>
+                            </div>
+                            <div class="details-data-container">
+                                <h3 class="bois-script titulos" style="margin-bottom: 0.6rem">Lugar</h3>
+                                <p class="bois-sans">Ciudadela de Pamplona. </br> Navarra, España</p>
+                            </div>
+                        </div>
+                        <img src="imágenes/02_marco_der.png" alt="" style="width:7%;height:213px;margin:20px 0">
+                    </div>
+                    <img src="imágenes/02-marco_fondo.png" alt="" class="w-100">
+                </div>
+            </div>
+
+            <div id="mapa_civil" class="background-div light-pink-background">
+                <div class="content-container" style="position: relative;">
+                    <img src="imágenes/02_marco_superior.png" alt="" class="w-100">
+                    <div class="inner-container" style="height: auto;">
+                        <img src="imágenes/02_marco_izq.png" alt="" style="width: 10%;height: 215px; margin:25px 0">
+                        <div style="text-align: center;position: absolute; top:6%" class="map-container">
+                            <h2 class="bois-script" style="margin-top: 1rem; font-size: 1.9rem">Ciudadela de Pamplona</h2>
+                            <h3 class="bois-sans">Navarra, España</h3>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5853.846886837569!2d-1.6516540383758627!3d42.81110381571052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd509258f69d4109%3A0xf69e8e326867a610!2sCiudadela%20de%20Pamplona!5e0!3m2!1sen!2ses!4v1744654482199!5m2!1sen!2ses"  
+                            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
+                        </div>
+                        <img src="imágenes/02_marco_der.png" alt="" style="width:7%;height:213px;margin:20px 0">
+                    </div>
+                    <img src="imágenes/02-marco_fondo.png" alt="" class="w-100">
+                </div>
+            </div>
+
+            <div id="detalles_ceremonia" class="background-div light-pink-background">
+                <div class="content-container" style="position: relative;">
+                    <img src="imágenes/03_marco_superior.png" alt="" class="w-100">
+                    <div class="inner-container h-center" style="position: absolute;flex-direction: column; text-align: center; height: 76%;">
+                        <img src="imágenes/03_img_florero.png" alt="" style="width: 16%;margin:0 auto">
+                        <h2 style="margin:0 auto 8px; font-size:7.2vw;" class="antonellie">Ceremonia</h2>
+                        <div>
+                            <h3 class="bois-script titulos">Fecha</h3>
+                            <p class="bois-sans" style="margin-top:-3px">Sábado 13 de septiembre de 2025</p>
+                        </div>
+                        <div>
+                            <h3 class="bois-script titulos">Hora</h3>
+                            <p class="bois-sans" style="margin-top:-3px">19:30 horas</p>
+                        </div>
+                        <div style="margin-bottom: 5vw">
+                            <h3 class="bois-script titulos" style="margin-bottom: 1.3vw">Lugar</h3>
+                            <p class="bois-sans" style="font-size:1rem">Jardín de Arzábal (Museo Reina Sofía) </br> Madrid, España</p>
+                        </div>
+                    </div>
+                    <img src="imágenes/03_marco_inferior.png" alt="" class="w-100">
+                </div>
+            </div>
+
+            <div id="mapa_ceremonia" class="background-div light-pink-background">
+                <div class="content-container" style="position:relative">
+                    <img src="imágenes/03_marco_superior.png" alt="" class="w-100">
+                    <div class="inner-container" style="height: auto;">
+                        <div style="text-align: center;position: absolute; top:9%" class="map-container">
+                            <h2 class="bois-script" style="margin-top: 1rem; font-size: 1.9rem">Jardin </br>de Arzábal</h2>
+                            <h3 class="bois-sans">Madrid, España</h3>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3038.0093356783527!2d-3.693608326059878!3d40.40864397017595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sEl%20Jard%C3%ADn%20de%20Arz%C3%A1bal%2C%20Museo%20Nacional%20Centro%20de%20Arte%20Reina%20Sof%C3%ADa%2C%20Edificio%20Sabatini%2C%20C.%20de%20Sta.%20Isabel%2C%2052%2C%20Centro%2C%2028012%20Madrid!5e0!3m2!1ses!2ses!4v1744112865950!5m2!1ses!2ses" 
+                            style="border:0; height:60%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
+                        </div>
+                    </div>
+                    <img src="imágenes/03_marco_inferior.png" alt="" class="w-100">
+                </div>
+            </div>
+
+            <div id="Vestimenta" class="background-div light-white">
+                <div class="content-container">
+                    <img src="imágenes/01_marco_superior.png" alt="" class="frameY">
+                    <div class="inner-container">
+                        <img src="imágenes/01_marco_lado.png" alt="" class="portada-marcos-laterales">
+                        <div class="data-container" style="height: 80%;">
+                            <img src="imágenes/04_lazo.png" alt="" style="width: 20%; margin:12% auto;">
+                            <h2 style="margin: 1.5rem auto 2rem;font-size: 2.2rem;" class="antonellie">Detalles</h2>
+                            <div style="margin-bottom:2rem">
+                                <h3 class="bois-script" style="font-size:7.2vw;margin-bottom:3rem">Código de vestimenta</h3>
+                                <img src="imágenes/04_semi-formal.png" alt="" style="width: 39%;">
+                            </div>
+                            <div style="font-size: 1rem;line-height: 21px;" class="bois-sans">
+                                <p>*En atención al protocolo, por favor 
+                                </br>
+                                evitar colores blanco, rojo 
+                                </br>
+                                y tonos nude en la vestimenta de los eventos.
+                                </p>
+                            </div>
+                        </div>
+                        <img src="imágenes/01_marco_lado.png" alt="" class="portada-marcos-laterales" style="transform: rotateY(3.142rad);">
+                    </div>
+                    <img src="imágenes/01_marco_superior.png" alt="" class="frameY" style="transform:rotateX(3.142rad)">
+                </div>
+            </div>
+
+            <div id="RSVP" class="background-div light-white">
+                <div class="content-container" style="position: relative;">
+                    <img src="imágenes/05_marco_superior.png" alt="" class="w-100">
+                    <div class="inner-container" style="height: auto;">
+                        <img src="imágenes/05_marco_izq.png" alt="" style="width: 10%;height: 215px; margin:25px 0">
+                        <div style="text-align: center; position:absolute;top:7%;height: 90%;">
+                            <img src="imágenes/05_torta.png" alt="" style="width: 27%;margin-bottom: 1rem">
+                            <form action="https://script.google.com/macros/s/AKfycbz2x5m0wpeC-eDl-DLOZpmvWMC1lzeCQFthr8YQSqX_6DDLyWOuEAkgZzZ5xgMvkkrW/exec" 
+                            id="form-RSVP" method="POST" >
+                                <div>   
+                                    <img src="imágenes/05_comfirma_tu_asistencia.png" alt="" style="width: 60%;">
+                                    <textarea name="Nombre" id="nombre-form" placeholder="Nombre" class="bois-sans"></textarea>
+                                    <p style="font-size: 0.9rem;margin-top: 4px" class="bois-sans">*puedes seleccionar más de una opción</p>
+                                </div>
+                                <div class="bois-script" style="text-align: left;margin:10px 0;">
+                                    <div class="opcion-boda" onclick="selectOption('Civil')">
+                                        <input type="checkbox" id="Civil" value="Si" name="Civil">
+                                        <label for="civil">Matrimonio civil</label>
+                                    </div>
+                                    <div class="opcion-boda" onclick="selectOption('Ceremonia')">
+                                        <input type="checkbox" name="Ceremonia" id="Ceremonia" value="Si">
+                                        <label for="ceremonia">Ceremonia</label>
+                                    </div>
+                                    <div class="opcion-boda" onclick="selectOption('Ninguno')">
+                                        <input type="checkbox" name="Ninguno" id="Ninguno" value="Si">
+                                        <label for="Ninguno">No podré asistir</label>
+                                    </div>
+                                </div>
+                                <p class="bois-sans" style="font-size:14.4px">Por favor enviar respuesta antes del 01 de agosto</p>
+                                <input type="submit" value="Enviar" id="btn-form-submit" class="bois-sans">
+                            </form>
+                        </div>
+                        <img src="imágenes/05_marco_der.png" alt="" style="width:7%;height:213px;margin:20px 0">
+                    </div>
+                    <img src="imágenes/05_marco_fondo.png" alt="" class="w-100">
+                </div>
+            </div>
+
+            <div id="gracias" class="background-div light-pink-background" style="padding: 40% 5%;display: none;">
+                <div class="content-container" style="position: relative;">
+                    <img src="imágenes/03_marco_superior.png" alt="" class="w-100">
+                    <div class="inner-container" style="position: absolute;height: auto;top:20%">
+                        <div style="text-align: center;" class="flex-column">
+                            <img src="imágenes/06_lazo.png" alt="" style="width: 16%;margin-bottom: 3rem" class="centering">
+                            <img id="img-respuesta" src="imágenes/06_gracias_por_tu_respuesta.png" alt="" style="width: 32%;" class="centering visible">
+                            <p class="bois-script hidden" id="img-poema" style="font-size: 1.2rem">"Cada ciudad puede ser otra </br>cuando el amor pinta los muros </br>y de los rostros que atardecen </br>unos es el rostro del amor"</p>
+                        </div>
+                    </div>
+                    <img src="imágenes/03_marco_inferior.png" alt="" class="w-100">
+                </div>
+            </div>
+
+        </main>
+    </body>
+</html>
