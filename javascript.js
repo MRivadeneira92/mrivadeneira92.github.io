@@ -33,7 +33,7 @@ window.addEventListener("load", function(){
                 document.querySelector("#img-respuesta").style.display = "none";
                 document.querySelector("#img-poema").classList.remove("hidden");
                 document.querySelector("#img-poema").classList.add("visible");
-            },3000)
+            },1800)
         })
     })
 
