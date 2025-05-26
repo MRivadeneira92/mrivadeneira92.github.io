@@ -5,6 +5,7 @@ window.addEventListener("load", function(){
     } 
     
     const form = document.querySelector('#form-RSVP')
+    
     form.addEventListener("submit", function(event) {
         var btnEnviar = document.querySelector("#btn-form-submit");
         btnEnviar.classList.add("btn-colour-change");
