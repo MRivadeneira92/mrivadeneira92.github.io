@@ -6,7 +6,18 @@ window.addEventListener("load", function(){
     
     const form = document.querySelector('#form-RSVP')
     
+    document.querySelector("#btn-form-submit").addEventListener("click",()=> {
+        console.log("uno")
+        if (document.querySelector("#nombre-form").value !=="") {
+            console.log("dos")
+            document.querySelector("#hidden-btn-submit").click();
+        } else {
+            alert("Por favor, colocar un nombre(s)")
+        }
+    })
+
     form.addEventListener("submit", function(event) {
+        console.log("le banane")
         var btnEnviar = document.querySelector("#btn-form-submit");
         btnEnviar.classList.add("btn-colour-change");
         btnEnviar.value = "Enviando";
@@ -26,7 +37,6 @@ window.addEventListener("load", function(){
             btnEnviar.style.color = "#625E5F";
             btnEnviar.disabled = true;
             setTimeout(() => {
-                console.log("book");
                 document.querySelector("#img-respuesta").classList.remove("visible");
                 document.querySelector("#img-respuesta").classList.add("hidden");
             },1000)
