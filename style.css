@@ -88,6 +88,10 @@ textarea::placeholder {
     width: 90%;
 }
 
+#Portada {
+    display: none;
+}
+
 .portada-marcos-laterales {
     width: 13%;
     margin: 20% 0;
@@ -131,13 +135,20 @@ textarea::placeholder {
 #btn-form-submit {
     width: 200px;
     height: 25px;
+    background-color: #eabac8;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    margin: 0 auto;
+    cursor: pointer;
+    font-size: 1rem;
 
 }
 
 #form-RSVP {
     display: flex;
     flex-direction: column;
-    padding: 0 12vw;
+    padding: 0 10%;
 }
 
 .menu-mobile {
@@ -160,16 +171,14 @@ textarea::placeholder {
 }
 
 .mapa {
-    width: 100%;
     height: 100%;
-    padding: 0 15%;
     margin-top: 1rem;
 }
 
 .map-container {
     height: 66%;
     width: 80%;
-    margin: 0 auto;
+    left:9%;
 }
 
 .opcion-boda {
@@ -197,6 +206,7 @@ nav {
     margin: 1rem 0 0;
     height: 31px;
     padding: 5px;
+    width: 80%;
 }
 
 .light-white {
@@ -228,6 +238,10 @@ nav {
 }
 
 /* CEREMONIA */
+
+#ceremonia_title {
+    font-size: 2rem;
+}
 
 /* RSVP */
 
@@ -287,6 +301,10 @@ input[type="checkbox"] {
 
 @media (max-width: 800px) {
 
+    #Portada {
+        display:block;
+    }
+
     main {
         position: relative;
         z-index: -100;
@@ -309,7 +327,6 @@ input[type="checkbox"] {
 
     .map-container {
         margin: 0 auto;
-        width: 100%;
     }
 
     #btn-menu {
@@ -325,13 +342,6 @@ input[type="checkbox"] {
     #btn-form-submit {
         width: 80%;
         height: 28px;
-        background-color: #eabac8;
-        border: none;
-        outline: none;
-        border-radius: 10px;
-        margin: 0 auto;
-        cursor: pointer;
-        font-size: 1rem;
     }
 
     .background-div {
@@ -360,6 +370,7 @@ input[type="checkbox"] {
     }
 
     /* Portada */
+
     .portada-marcos-laterales {
         width: 13%;
         margin: 15% 0;
@@ -391,4 +402,21 @@ input[type="checkbox"] {
     #detalles_ceremonia {
         padding: 40% 5%;    
     }
+
+    .mapa {
+        width: 100%;
+        padding: 0 3% 0 6%;
+    }
+
+    #ceremonia_title {
+        font-size: 7.2vw;
+    }
+
+    .title-container {
+        font-size:7.2vw;
+    }
+
+    #form-RSVP {
+    padding: 0 12vw;
+}
 }
